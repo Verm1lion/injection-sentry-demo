@@ -1,8 +1,8 @@
+# Streamlit Community Cloud Python 3.14 kullaniyor; eski torch surumlerinin o ABI icin
+# wheel'i yok. Log'un verdigi mevcut en yeni CPU wheel'i sabitlendi.
+# sentencepiece/protobuf YOK: ana model (mmBERT) hizli tokenizer (tokenizer.json) kullaniyor.
 --extra-index-url https://download.pytorch.org/whl/cpu
-torch==2.5.1+cpu
+torch==2.14.0+cpu
 transformers>=4.48,<5
 huggingface_hub>=0.30
-numpy>=1.26,<3
-streamlit>=1.38
-sentencepiece
-protobuf
+numpy>=1.26
